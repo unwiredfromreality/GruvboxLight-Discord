@@ -36,4 +36,6 @@
 
 /* Any custom CSS below here */
 
-
+* {
+--elevation-low: none;
+}
