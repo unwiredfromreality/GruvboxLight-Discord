@@ -32,7 +32,7 @@
   --backgroundtertiary: 242,229,188;
   --backgroundfloating: 230,213,174;
   --settingsicons: 1;
-  --elevation-low: none;
+  --elevation-low: 0 0 0 1px rgba(6, 6, 7, 0.08);
 }
 
 /* Any custom CSS below here */
