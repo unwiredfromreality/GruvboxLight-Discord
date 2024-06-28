@@ -27,12 +27,50 @@
   --textdarkest: 79,56,41;
   --backgroundaccent: 230,213,174;
   --backgroundprimary: 242,229,188;
-  --backgroundsecondary: 242,229,188;
-  --backgroundsecondaryalt: 242,229,188;
-  --backgroundtertiary: 242,229,188;
+  --backgroundsecondary: 235, 219, 178;
+  --backgroundsecondaryalt: 235, 219, 178;
+  --backgroundtertiary: 235, 219, 178;
   --backgroundfloating: 230,213,174;
   --settingsicons: 1;
-  --elevation-low: 0 0 0 1px rgba(6, 6, 7, 0.08);
 }
 
 /* Any custom CSS below here */
+
+* {
+  --elevation-low: 0 0 0 1px rgba(101, 71, 53, 0.15);
+	--scrollbar-auto-scrollbar-color-thumb: rgba(101,71,53,0.7);
+	--scrollbar-auto-scrollbar-color-track: rgba(101,71,53,0.7);
+	--scrollbar-auto-thumb: rgba(101,71,53,0.7);
+	--scrollbar-auto-track: transparent;
+	--scrollbar-thin-thumb: rgba(101,71,53,0.7);
+	--scrollbar-thin-track: transparent;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+--font-primary: Roboto, sans-serif !important;
+--font-display: font-family: Roboto, sans-serif !important;
+}
+
+code {
+font-family: Roboto Mono, monospace !important;
+}
+
+.searchBar_a46bef {
+border: 1px solid rgba(101,71,53,0.5);
+}
+
+.search_a46bef, .search_a46bef .DraftEditor-root, .placeholder_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b {
+font-weight: 400;
+font-family: Roboto Mono, monospace !important;
+}
+
+.scrollableContainer_d0696b.themedBackground_d0696b {
+border: 1px solid rgba(101,71,53,0.5);
+}
+
+.topic_bf3bbb, .topic_bf3bbb.expandable_bf3bbb, .activityText_a31c43, .textRuler_ad923e.activityText_a31c43 {
+font-weight: 400;
+}
