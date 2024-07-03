@@ -13,6 +13,8 @@
 */
 
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   --accentcolor: 98, 94, 148;
@@ -37,17 +39,19 @@
 /* Any custom CSS below here */
 
 * {
-  --elevation-low: 0 0 0 1px rgba(101, 71, 53, 0.15);
-	--scrollbar-auto-scrollbar-color-thumb: rgba(101,71,53,0.7);
-	--scrollbar-auto-scrollbar-color-track: rgba(101,71,53,0.7);
-	--scrollbar-auto-thumb: rgba(101,71,53,0.7);
-	--scrollbar-auto-track: transparent;
-	--scrollbar-thin-thumb: rgba(101,71,53,0.7);
-	--scrollbar-thin-track: transparent;
+  --elevation-low: 0 0 0 1px rgba(101, 71, 53, 0.25) !important;
+  --elevation-high: var(--elevation-low) !important;
+  --elevation-medium: var(--elevation-medium) !important;
+  --scrollbar-auto-scrollbar-color-thumb: rgba(101,71,53,0.7);
+  --scrollbar-auto-scrollbar-color-track: rgba(101,71,53,0.7);
+  --scrollbar-auto-thumb: rgba(101,71,53,0.7);
+  --scrollbar-auto-track: transparent;
+  --scrollbar-thin-thumb: rgba(101,71,53,0.7);
+  --scrollbar-thin-track: transparent;
+  --dangercolor: 193, 74, 74 !important;
+  --status-positive-background: rgb(108, 120, 46);
+  --green-360: rgb(108, 120, 46);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
 --font-primary: Roboto, sans-serif !important;
@@ -58,19 +62,57 @@ code {
 font-family: Roboto Mono, monospace !important;
 }
 
-.searchBar_a46bef {
+#app-mount .children_e44302::after {
+background: none;
+}
+
+#app-mount .userPopoutOuter_c69a7b {
+box-shadow: var(--elevation-low);
+}
+
+.container_eedf95 {
+box-shadow: var(--elevation-low);
+}
+
+.tabBody_c2739c:before {
+box-shadow: none;
+}
+
+.searchBar_a46bef, .searchBar_e0840f {
 border: 1px solid rgba(101,71,53,0.5);
 }
 
-.search_a46bef, .search_a46bef .DraftEditor-root, .placeholder_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b {
+.theme-light select, .theme-light textarea, .theme-light input, .theme-light ::placeholder, .search_a46bef, .search_a46bef .DraftEditor-root, .placeholder_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b {
 font-weight: 400;
 font-family: Roboto Mono, monospace !important;
 }
 
-.scrollableContainer_d0696b.themedBackground_d0696b {
+.scrollableContainer_d0696b.themedBackground_d0696b, .accountProfileCard_b69b77 {
 border: 1px solid rgba(101,71,53,0.5);
+border-radius: 4px;
 }
 
-.topic_bf3bbb, .topic_bf3bbb.expandable_bf3bbb, .activityText_a31c43, .textRuler_ad923e.activityText_a31c43 {
+.topic_bf3bbb, .topic_bf3bbb.expandable_bf3bbb, .activityText_a31c43, .textRuler_ad923e.activityText_a31c43, .activityText_c91bad, .text_f7ebfd  {
 font-weight: 400;
 }
+
+.voiceChannelsButton_a08117 {
+border: 1px solid var(--background-modifier-accent);
+border-radius: 4px;
+}
+
+.newMessagesBar_cf58b5 {
+border-radius: 0 0 4px 4px;
+}
+
+/* prevent font weight from changing on non-hidpi */
+@media (-webkit-max-device-pixel-ratio: 1) {
+    .theme-light .markup_d6076c, .theme-light .embedDescription_ad0b71 {
+    font-weight: 400;
+    }
+    .theme-light .username_ec86aa, .modeSelected_d8bfb3 .name_d8bfb3, .modeSelected_d8bfb3:hover .name_d8bfb3, .modeConnected_d8bfb3 .name_d8bfb3, .modeConnected_d8bfb3:hover .name_d8bfb3, .modeUnreadImportant_d8bfb3 .name_d8bfb3, .modeUnreadImportant_d8bfb3:hover .name_d8bfb3 {
+    font-weight: 500;
+    }
+    }
+
+
